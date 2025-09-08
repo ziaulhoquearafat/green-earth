@@ -69,8 +69,8 @@
   <!-- start banner section -->
 
   <main>
-    <section class="flex justify-between items-center bg-[#CFF0DC] pb-3 pt-5 md:pb-0">
-      <div class="w-110">
+    <section class="flex flex-col md:flex-row justify-between items-center bg-[#CFF0DC] pb-3 pt-5 md:pb-0">
+      <div class="w-50 md:w-110 pb-5 md:pb-0">
         <img src="./assets/hero-leaf1.png" alt="">
       </div>
       <div class="text-center space-y-3">
@@ -82,14 +82,14 @@
           generations.</p>
         <button class="btn btn-warning text-[#15803d] bg-[#facc16] rounded-full">Get Involved</button>
       </div>
-      <div class="w-110">
+      <div class="w-50 md:w-110 py-5 md:py-0">
         <img src="./assets/hero-leaf2.png" alt="">
       </div>
     </section>
 
     <!-- end banner section -->
 
-    <!-- start products section -->
+    <!-- start category, products, and Cart section -->
 
     <section class="bg-[#f0fdf4] pt-[80px] pb-[50px]">
       <h2 class="text-center mb-6 text-[#1F2937] text-3xl font-semibold">Choose Your Trees</h2>
@@ -97,12 +97,8 @@
         <div class="w-[380px]">
           <h3 class="text-xl font-semibold mb-3">Categories</h3>
           <div>
-            <ul>
-              <li class="hover:bg-[#15803d] text-[#1F2937] hover:text-white py-1 px-2 rounded-sm cursor-pointer">All
-                Tree</li>
-              <li class="hover:bg-[#15803d] text-[#1F2937] hover:text-white py-1 px-2 rounded-sm cursor-pointer">Fruit
-                Tree
-              </li>
+            <ul id="category-container">
+
             </ul>
           </div>
         </div>

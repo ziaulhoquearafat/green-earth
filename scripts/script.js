@@ -85,12 +85,12 @@ const showPlantsByCategory = plants => {
           <p class="text-[#15803D] bg-[#DCFCE7] rounded-full py-1 px-3 text-sm font-semibold">${plant.category}</p>
           <p class="text-sm font-semibold leading-5"><i class="fa-solid fa-bangladeshi-taka-sign"></i> ${plant.price}</p>
         </div>
-        <button data-id="${plant.id}" data-name="${plant.name}" data-price="${plant.price}" class="btn w-full rounded-full bg-[#15803d] text-white mt-auto">Add to Cart</button>
+        <button data-id="${plant.id}" data-name="${plant.name}" data-price="${plant.price}" class="btn add-to-cart w-full rounded-full bg-[#15803d] text-white mt-auto">Add to Cart</button>
       </div>
     `;
   });
 
-  const buttons = document.querySelectorAll('.btn');
+  const buttons = document.querySelectorAll('.add-to-cart');
 
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
